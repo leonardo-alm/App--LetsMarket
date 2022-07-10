@@ -1,0 +1,121 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "LetsMarket/1.0.0": {
+        "dependencies": {
+          "BetterConsoleTables": "1.1.3",
+          "Bogus": "34.0.2",
+          "CsvHelper": "27.2.1",
+          "GetPass": "1.0.0",
+          "Sharprompt": "2.4.2"
+        },
+        "runtime": {
+          "LetsMarket.dll": {}
+        }
+      },
+      "BetterConsoleTables/1.1.3": {
+        "runtime": {
+          "lib/net5.0/BetterConsoleTables.dll": {
+            "assemblyVersion": "1.1.3.0",
+            "fileVersion": "1.1.3.0"
+          }
+        }
+      },
+      "Bogus/34.0.2": {
+        "runtime": {
+          "lib/net6.0/Bogus.dll": {
+            "assemblyVersion": "34.0.2.0",
+            "fileVersion": "34.0.2.0"
+          }
+        }
+      },
+      "CsvHelper/27.2.1": {
+        "runtime": {
+          "lib/net6.0/CsvHelper.dll": {
+            "assemblyVersion": "27.0.0.0",
+            "fileVersion": "27.2.1.0"
+          }
+        }
+      },
+      "GetPass/1.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/GetPass.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Sharprompt/2.4.2": {
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sharprompt.dll": {
+            "assemblyVersion": "2.4.2.0",
+            "fileVersion": "2.4.2.0"
+          }
+        },
+        "resources": {
+          "lib/netstandard2.0/ja/Sharprompt.resources.dll": {
+            "locale": "ja"
+          }
+        }
+      },
+      "System.ComponentModel.Annotations/5.0.0": {}
+    }
+  },
+  "libraries": {
+    "LetsMarket/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BetterConsoleTables/1.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ILweE/pGE7gK2v+5+PaddZtvAaa+1p8QSAgR3JhnU3rMD0F7KS8paRCwJsVhWC6qb//Va4jryV2vU28+MJzmhA==",
+      "path": "betterconsoletables/1.1.3",
+      "hashPath": "betterconsoletables.1.1.3.nupkg.sha512"
+    },
+    "Bogus/34.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2KQAuMn3fLAQ2r6jeiffZnpv0bi3GCW3iRB2v1KeHIEBu8MNTh9dBlLTZwGvM0pr+9doKkU8L5JgCURmTmT88A==",
+      "path": "bogus/34.0.2",
+      "hashPath": "bogus.34.0.2.nupkg.sha512"
+    },
+    "CsvHelper/27.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uS5ix5hL9gL5taiAG//CScyJa8Fn1ZOh3FDhDvf4laboESFs84mCNropfp7PIt8xCkyQofljFpqu1B5UnSXjyA==",
+      "path": "csvhelper/27.2.1",
+      "hashPath": "csvhelper.27.2.1.nupkg.sha512"
+    },
+    "GetPass/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Eob6pXCWLStHr6E1TNzKHakkeUmbiQpfV+R0Vq0DPRs7gaw/zdtM1W9j/oHj2zsFjNSNbIoXetFAjpRjDAZdIA==",
+      "path": "getpass/1.0.0",
+      "hashPath": "getpass.1.0.0.nupkg.sha512"
+    },
+    "Sharprompt/2.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zNFE/UOvAJGqanQ830rIonUyeFDpPFdOVe17Baom7+MS8fsBzQ7i3bTx6V94OwZWtbqnO729LsGA4l0a4zc3tg==",
+      "path": "sharprompt/2.4.2",
+      "hashPath": "sharprompt.2.4.2.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dMkqfy2el8A8/I76n2Hi1oBFEbG1SfxD2l5nhwXV3XjlnOmwxJlQbYpJH4W51odnU9sARCSAgv7S3CyAFMkpYg==",
+      "path": "system.componentmodel.annotations/5.0.0",
+      "hashPath": "system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    }
+  }
+}
