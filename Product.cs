@@ -25,8 +25,8 @@ namespace LetsMarket
             if (!Prompt.Confirm("Deseja Salvar?"))
                 return;
 
-            Database.Products.Add(product);
-            Database.Save(DatabaseOption.Products);
+            Database.AddProduct(product);
+            Save.SaveProduct();
         }
 
         public static void ListProducts()
@@ -50,7 +50,7 @@ namespace LetsMarket
 
             Prompt.Bind(product);
 
-            Database.Save(DatabaseOption.Products);
+            Save.SaveProduct();
         }
 
         public static void RemoveProduct()
@@ -61,8 +61,8 @@ namespace LetsMarket
             if (!confirm)
                 return;
 
-            Database.Products.Remove(product);
-            Database.Save(DatabaseOption.Products);
+            Database.RemoveProduct(product);
+            Save.SaveProduct();
         }
     }
 }

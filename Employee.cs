@@ -28,17 +28,23 @@ namespace LetsMarket
             if (!Prompt.Confirm("Deseja Salvar?"))
                 return;
             
-            Database.Employees.Add(employee);
-            Database.Save(DatabaseOption.Employees);
+            Database.AddEmployee(employee);            
+
+            if (Database.Employees.Count > 1 && Database.Employees[0].Login == "admin" && Database.Employees[0].Password == "admin")
+            {
+                Database.RemoveEmployee(Database.Employees[0]);
+                
+            }
+            Save.SaveEmployee();
         }
 
-        private static string CreateLoginSuggestionBasedOnName(string name)
-        {
-            var parts = name?.Split(' ', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
-            var suggestion = parts?.Length > 0 ? (parts.Length > 1 ? $"{parts[0]}.{parts[parts.Length - 1]}" : $"{parts[0]}") : "";
+        //private static string CreateLoginSuggestionBasedOnName(string name)
+        //{
+        //    var parts = name?.Split(' ', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+        //    var suggestion = parts?.Length > 0 ? (parts.Length > 1 ? $"{parts[0]}.{parts[parts.Length - 1]}" : $"{parts[0]}") : "";
 
-            return suggestion.ToLower();
-        }
+        //    return suggestion.ToLower();
+        //}
 
         public static void ListEmployees()
         {
@@ -61,7 +67,7 @@ namespace LetsMarket
 
             Prompt.Bind(employee);
 
-            Database.Save(DatabaseOption.Employees);
+            Save.SaveEmployee();
         }
 
         public static void RemoveEmployee()
@@ -73,20 +79,14 @@ namespace LetsMarket
                 return;
             }
 
-            if (Database.Employees.Count > 1 && Database.Employees[0].Login == "admin" && Database.Employees[0].Password == "admin")
-            {
-                Database.Employees.Remove(Database.Employees[0]);
-                Database.Save(DatabaseOption.Employees);
-            }
-
             var employee = Prompt.Select("Selecione o Funcionário para Remover", Database.Employees);
             var confirm = Prompt.Confirm("Tem Certeza?", false);
 
             if (!confirm)
                 return;
 
-            Database.Employees.Remove(employee);
-            Database.Save(DatabaseOption.Employees);
+            Database.RemoveEmployee(employee);
+            Save.SaveEmployee();
         }
     }
 }

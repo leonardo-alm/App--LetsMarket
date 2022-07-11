@@ -26,8 +26,8 @@ namespace LetsMarket
             if (!Prompt.Confirm("Deseja Salvar?"))
                 return;
 
-            Database.Clients.Add(employee);
-            Database.Save(DatabaseOption.Clients);
+            Database.AddClient(employee);
+            Save.SaveClient();
         }
         public static void ListClients()
         {
@@ -50,7 +50,7 @@ namespace LetsMarket
 
             Prompt.Bind(client);
 
-            Database.Save(DatabaseOption.Clients);
+            Save.SaveClient();
         }
 
         public static void RemoveClient()
@@ -68,8 +68,8 @@ namespace LetsMarket
             if (!confirm)
                 return;
 
-            Database.Clients.Remove(client);
-            Database.Save(DatabaseOption.Clients);
+            Database.RemoveClient(client);
+            Save.SaveClient();
         }
     }
 }
