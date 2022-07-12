@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace LetsMarket
 {
-    public class DatabaseBaseValidation : Database
+    public class DatabaseValidation : Database
     {
 
         public static void ValidateDatabase()

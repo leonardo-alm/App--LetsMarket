@@ -20,7 +20,7 @@ namespace LetsMarket
 
         static Database()
         {
-            DatabaseBaseValidation.ValidateDatabase();
+            DatabaseValidation.ValidateDatabase();
             Load.LoadEmployee();
             Load.LoadProduct();
             Load.LoadClient();
