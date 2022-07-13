@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Sharprompt;
 
-namespace LetsMarket
+namespace LetsMarket.validations
 {
     public class CpfValidation
     {

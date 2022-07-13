@@ -2,7 +2,7 @@ using BetterConsoleTables;
 using Sharprompt;
 using System.ComponentModel.DataAnnotations;
 
-namespace LetsMarket
+namespace LetsMarket.validations
 {
     public class Client
     {

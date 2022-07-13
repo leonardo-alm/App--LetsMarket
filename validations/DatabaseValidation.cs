@@ -1,7 +1,7 @@
 ﻿using CsvHelper;
 using System.Globalization;
 
-namespace LetsMarket
+namespace LetsMarket.validations
 {
     public class DatabaseValidation : Database
     {

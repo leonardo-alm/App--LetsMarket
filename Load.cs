@@ -1,6 +1,6 @@
 ﻿using System.Xml.Serialization;
 
-namespace LetsMarket
+namespace LetsMarket.validations
 {
     public class Load : Database
     {

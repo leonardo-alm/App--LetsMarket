@@ -1,8 +1,7 @@
 using Sharprompt;
-namespace LetsMarket
+namespace LetsMarket.validations
 
 {
-
     public class MenuItem
     {
         private const string UNSELECTED = "|     ";

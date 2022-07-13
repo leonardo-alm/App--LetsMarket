@@ -3,7 +3,7 @@ using CsvHelper;
 using System.Globalization;
 using System.Xml.Serialization;
 
-namespace LetsMarket
+namespace LetsMarket.validations
 {
     public enum DatabaseOption { Employees, Products, Clients }
 

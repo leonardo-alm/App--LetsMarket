@@ -1,7 +1,7 @@
 ﻿using BetterConsoleTables;
 using Sharprompt;
 
-namespace LetsMarket
+namespace LetsMarket.validations
 {
     public class Sale
     {

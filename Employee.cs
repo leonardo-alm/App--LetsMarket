@@ -2,7 +2,7 @@ using BetterConsoleTables;
 using Sharprompt;
 using System.ComponentModel.DataAnnotations;
 
-namespace LetsMarket
+namespace LetsMarket.validations
 {
     public class Employee
     {
@@ -37,7 +37,7 @@ namespace LetsMarket
             }
             Save.SaveEmployee();
         }
-
+        #region Unused Code
         //private static string CreateLoginSuggestionBasedOnName(string name)
         //{
         //    var parts = name?.Split(' ', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
@@ -45,7 +45,7 @@ namespace LetsMarket
 
         //    return suggestion.ToLower();
         //}
-
+        #endregion
         public static void ListEmployees()
         {
             Console.WriteLine("Listando Funcionários");
