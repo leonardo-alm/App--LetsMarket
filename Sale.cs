@@ -77,7 +77,7 @@ namespace LetsMarket.validations
                     var item = Prompt.Select("Selecione o item a ser cancelado", saleItems);
                     saleItems.Remove(item);
 
-                    total -= item.UnitPrice;
+                    total = total - (item.UnitPrice * item.Amount);
                 }
             } while (product != exit && product != closeSale);
 
